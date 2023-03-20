@@ -1,0 +1,24 @@
+:root {
+  --brown-coffee: #D5B3A2;
+  --beige-coffee: #E8D4C3;
+  --title-color: #493F3E;
+  --font1: 'DM Sans', sans-serif;;
+}
+
+body, html {
+  box-sizing: border-box;
+  background-color: var(--beige-coffee);
+}
+
+.nav__logo {
+  width: 100%;
+}
+
+.nav__img {
+  width: 150px;
+}
+.title {
+  font-family:var(--font1) ;
+  color: var(--title-color);
+  font-size: 2.5rem;
+}
