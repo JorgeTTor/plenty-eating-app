@@ -14,15 +14,16 @@
 
 body{
   background-color: var(--beige-coffee);
+  min-height: 100vh;
 }
 
 .recipes__container {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   padding: 100px 0;
 }
 
@@ -43,8 +44,7 @@ body{
 
 .title, .subtitle {
   font-family:var(--font1) ;
-  color: var(--title-color);
- 
+  color: var(--title-color); 
 }
 
 .title {
@@ -59,13 +59,12 @@ body{
 
 form {
   width: 90%;
-  max-width: 400px;
+  max-width: 375px;
   margin: 20px auto;
-
 }
 
 form input {
-  width: 90%;
+  width: 89%;
   background-color: transparent;
   padding: 1em;
   border-radius: 36px;
@@ -73,4 +72,37 @@ form input {
   outline:none;
   font-size: 2rem;
   display: inline-block;
+}
+form ion-icon {
+  width: 10%;
+  font-size:3rem;
+  margin: -9px;
+  color: #71302f;
+}
+
+.recipes__result {
+  margin-top: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.recipe__item {
+  box-shadow:  0 0 3px rgba(0,0,0,0.5);
+}
+
+.recipe__item img {
+  width: 100%;
+  display:block;
+}
+
+.recipe__content {
+line-height: 1.5;
+font-size:  0.9em;
+padding: 15px;
+background-color: var(--brown-coffee);
+
 }
