@@ -19,6 +19,7 @@ body{
 
 .recipes__container {
   width: 100%;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +34,7 @@ body{
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .nav__logo {
   width: 100%;
   object-fit: cover;
@@ -81,20 +83,17 @@ form ion-icon {
 }
 
 .recipes__result {
-  margin-top: 50px;
   margin: 0 auto;
   max-width: 1000px;
   display: grid;
-  grid-gap: 2em;
-  grid-template-columns: repeat(3, 1fr);
-  
+  grid-template-columns:  repeat(auto-fit, minmax(325px, 1fr));
+  gap: 1em;
 }
 
 .recipe__item {
-  box-shadow:  0 0 3px rgba(0,0,0,0.5);
+  display: grid;
 }
-
-.recipe__item img {
+.recipe__img {
   width: 100%;
   display:block;
 }
@@ -106,3 +105,9 @@ padding: 15px;
 background-color: var(--brown-coffee);
 
 }
+
+.recipe__content, .recipe__data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
