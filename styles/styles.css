@@ -110,8 +110,6 @@ form ion-icon {
 line-height: 1.5;
 font-size:  0.9em;
 padding: 15px;
-;
-
 }
 
 .recipe__content, .recipe__data {
@@ -137,4 +135,13 @@ padding: 15px;
   font-size: 1.1rem;
   margin-top: 20px ;
   align-self: flex-start;
+ }
+
+ .recipe__data {
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
  }
