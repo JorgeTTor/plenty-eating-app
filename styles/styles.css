@@ -27,12 +27,30 @@ body{
   max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 50px 0 ;
+  padding: 20px 0 ;
+}
+
+.hero{
+position: relative;
+padding: 20px ;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url('/images/logo_transparent.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
  .nav {
   display: flex;
-  align-items: center;
+  align-items: center ;
+  gap: 1.1em;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -47,6 +65,19 @@ body{
   display: block;
 }
 
+.nav__link:first-of-type {
+  margin-left: auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--title-color);
+  font-size: 1.2rem;
+}
+
+.nav__link:hover {
+  background-color: var(--brown-coffee);
+}
 
 .recipes__container {
   width: 100%;
@@ -55,8 +86,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 /* .container{
@@ -185,3 +215,7 @@ form ion-icon {
  }
 
 
+@media (max-width: 768px) {
+
+
+}
