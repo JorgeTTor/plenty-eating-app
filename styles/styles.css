@@ -15,7 +15,6 @@
 html {
   font-family: var(--font1);
   font-size: 16px;
-  font-weight: 600;
 }
 
 body{
@@ -32,15 +31,15 @@ body{
   align-items: center;
   justify-content: center;
 
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
-.container{
+/* .container{
   width: 90%;
   height: auto;
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 .nav__logo {
   width: 100%;
@@ -54,6 +53,7 @@ body{
 .title, .subtitle {
   font-family:var(--font1) ;
   color: var(--title-color); 
+  font-weight: 600;
 }
 
 .title {
@@ -62,8 +62,9 @@ body{
    margin-bottom: 30px;
 }
 
-.subtitle {
-  font-size: 1.6rem;
+.sutbtitle{
+  font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 form {
@@ -88,53 +89,62 @@ form ion-icon {
   margin: -9px;
   color: #71302f;
 }
+.recipes__container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .recipes__result {
   margin: 0 auto;
-  max-width: 1000px;
   display: grid;
-  grid-template-columns:  repeat(auto-fit, minmax(325px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 2rem;
+  overflow: hidden;
+  margin: 1rem 0;
 }
 
 .recipe__item {
-  display: grid;
-  background-color: var(--brown-coffee)
+  width: 350px;
+  margin: 0 auto;
+  background-color:  var(--brown-coffee);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
+
 .recipe__img {
   width: 100%;
-  display:block;
+  height: 300px;
+  object-fit: cover;
 }
 
 .recipe__content {
-line-height: 1.5;
-font-size:  0.9em;
-padding: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.recipe__content, .recipe__data {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
-
- .recipe__item .subtitle {
-  color: aliceblue;
-  margin: 20px 10px 0 0;
-  font-size: 1.8rem;
-  font-weight: 400;
- }
-
  .recipe__btn {
+  display: inline-block;
   text-decoration: none;
+  padding: 20px 20px;
   text-align: center;
+  vertical-align: center;
   width: 130px;
+  height: 50px;
   padding: 10px 0 ;
   background-color: rgb(201, 148, 148);
   color: #fff;
-  font-size: 1.1rem;
-  margin-top: 20px ;
-  align-self: flex-start;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 8px;
+ }
+
+ .recipe__btn:hover{
+  background-color: #71302f;
+  border: 1px solid #fff;
  }
 
  .recipe__data {
@@ -143,5 +153,18 @@ padding: 15px;
   margin-top: 10px;
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
  }
+
+ .recipes__container form {
+  max-width: 800px;
+ }
+
+ .recipes__container form input {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
+  color: var(--title-color);
+ }
+
+
