@@ -33,7 +33,7 @@ function renderHTML(results) {
       <a href="${result.recipe.url}" target="_blank"  class="recipe__btn">View Recipe</a>
     </div>
     <p class="recipe__data">Calories: ${result.recipe.calories.toFixed(2)}</p>
-    <p class="recipe__data">Diet Label: ${result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels.length : 'Sorry, We did not find any data' }</p>
+    <p class="recipe__data">Diet Label: ${result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels : 'Sorry, We did not find any data' }</p>
     <p class="recipe__data">Health: ${result.recipe.healthLabels}</p>
   </div>
     `
