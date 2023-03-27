@@ -1,5 +1,5 @@
 :root {
-  --brown-coffee: #D5B3A2;
+  --brown-coffee: #d7b7a7;
   --beige-coffee: #E8D4C3;
   --title-color: #71302f;
   --font1: 'DM Sans', sans-serif;;
@@ -45,6 +45,8 @@ body{
   gap: 1.1em;
   margin: 0 auto;
   padding: 20px 0;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .nav__logo {
@@ -69,7 +71,7 @@ body{
 }
 
 .nav__link:hover {
-  background-color: var(--brown-coffee);
+  text-decoration: underline;
 }
 
 .plenty__hero {
@@ -245,7 +247,6 @@ form ion-icon {
     text-decoration: none;
     color:#71302f ;
   }
-
 
   .footer__link:hover{
     text-decoration: underline;
