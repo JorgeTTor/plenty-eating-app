@@ -69,12 +69,13 @@ padding: 0;
 
 .plenty__hero {
   width: 50%;
-  height: 150px;
+  max-height: 150px;
   margin: 0 auto;
 }
 
 .plenty__logo {
-  width: 200px;
+  max-width: 200px;
+
 }
 
 
@@ -118,7 +119,7 @@ form input {
   border-radius: 36px;
   border: none;
   outline:none;
-  font-size: 2rem;
+  font-size: 1rem;
   display: inline-block;
 }
 form ion-icon {
@@ -126,10 +127,6 @@ form ion-icon {
   font-size:3rem;
   margin: -9px;
   color: #71302f;
-}
-.recipes__container{
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .recipes__result {
