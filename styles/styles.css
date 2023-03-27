@@ -25,6 +25,7 @@ body{
 
 .main {
   margin: 0 auto;
+  height: auto;
 }
 
 .container{
@@ -213,19 +214,16 @@ form ion-icon {
 
  .footer{
   background-color: var(--brown-coffee);
-  color: #71302f;
-
+  color: #71302f; 
+  min-height: auto;
  }
 
  .footer__container{
-  display: flex;
-  flex-direction: column;
-  gap:2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
   margin-left: 1em;
- }
-
- .footer__logo {
-  display: block;
  }
 
   .footer__icon {
@@ -237,11 +235,6 @@ form ion-icon {
     font-size: 1.2rem;
   }
 
-  .footer__nav{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
 
   .footer__link {
     text-decoration: none;
@@ -266,7 +259,6 @@ form ion-icon {
     border-radius: 50%;
     text-decoration: none;
     display: flex;
-
   }
 
   .footer__logo {
@@ -274,6 +266,13 @@ form ion-icon {
     height: 100px;
     border-radius: 50%;
     padding: 0;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    text-align: center;
   }
 @media (max-width: 768px) {
 
