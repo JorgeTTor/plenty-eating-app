@@ -208,7 +208,71 @@ form ion-icon {
   line-height: 1.5rem;
  }
 
+ .footer{
+  background-color: var(--brown-coffee);
+  color: #71302f;
 
+ }
+
+ .footer__container{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  margin-left: 1em;
+ }
+
+ .footer__logo {
+  display: block;
+ }
+
+  .footer__icon {
+  vertical-align: middle;
+  margin-right: .5em;
+  }
+ 
+  .footer__info{ 
+    font-size: 1.2rem;
+  }
+
+  .footer__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .footer__link {
+    text-decoration: none;
+    color:#71302f ;
+  }
+
+
+  .footer__link:hover{
+    text-decoration: underline;
+  }
+
+  .footer__social {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    gap: 1.3em;
+  }
+
+  .footer__media {
+    border: 1px solid #71302f;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+
+  }
+
+  .footer__logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0;
+  }
 @media (max-width: 768px) {
 
 
