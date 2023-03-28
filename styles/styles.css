@@ -227,6 +227,8 @@ form ion-icon {
 .footer__img {
   width: 25px;
   height: 25px;
+  border-radius: 50%;
+  border: 1px solid #71302f;
 }
 
 .footer__nav {
