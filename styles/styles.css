@@ -80,7 +80,7 @@ html, body {
 }
 
 .recipes__container {
-  padding: 1rem; 
+  padding: 1rem 0 2em 0; 
   justify-items: center;
 }
 
@@ -147,7 +147,7 @@ form ion-icon {
   font-family:var(--font1) ;
   color: var(--title-color); 
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 180px;
   text-align: start;
   margin-bottom: 10px;
@@ -245,6 +245,7 @@ form ion-icon {
 @media (min-width: 768px) {
 
  .nav {
+
   align-items: center ;
   justify-content: space-between;
 }
@@ -253,9 +254,14 @@ form ion-icon {
   width: 110px;
 }
 
+.footer__media {
+    gap: 2em;
+  }
 
 .footer__nav {
   flex-direction: row;
+  max-width: 600px;
+  gap: 2em;
 }
 
 }
