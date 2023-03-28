@@ -9,4 +9,4 @@ This project is created to showcase html skills, css and javascript using API co
 
 ## Documentación
 
-![Documentacion_Plenty](../images/doc/doc_plenty.png)
+![Documentacion_Plenty](./images/doc/doc_plenty.png)
