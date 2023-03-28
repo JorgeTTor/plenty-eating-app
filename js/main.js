@@ -29,7 +29,7 @@ function renderHTML(results) {
     <div class="recipe__item">
     <img src="${result.recipe.image}" alt="healthy salad" class="recipe__img">
     <div class="recipe__content">
-      <h2 class="subtitle">${result.recipe.label}</h2>
+      <h2 class="dish">${result.recipe.label}</h2>
       <a href="${result.recipe.url}" target="_blank"  class="recipe__btn">View Recipe</a>
     </div>
     <p class="recipe__data">Calories: ${result.recipe.calories.toFixed(2)}</p>

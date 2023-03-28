@@ -18,7 +18,6 @@ html, body {
   height: 100%;
 }
 
-
 .container{
   max-width: 1200px;
   overflow: hidden;
@@ -74,41 +73,16 @@ html, body {
 
 }
 
-.title, .subtitle {
-  font-family:var(--font1) ;
-  color: var(--title-color); 
-  font-weight: 600;
-}
-
-.title {
-   font-size: 3.5rem;
-   text-align: center;
-   margin-bottom: 30px;
-}
-
-.sutbtitle{
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
 .main{
   min-height: 100vh;    
   background-color: var(--beige-coffee);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  margin: 0 auto;
 }
 
 .recipes__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  padding: 1rem;
+  padding: 1rem; 
   justify-items: center;
-  /* max-width: 1100px; */
-  
 }
-
 
 .recipes__container form {
   width: 89%;
@@ -146,6 +120,7 @@ form ion-icon {
   margin: 1rem 0;
 }
 
+
 .recipe__item {
   width: 350px;
   margin: 0 auto;
@@ -169,20 +144,31 @@ form ion-icon {
   align-items: center;
 }
 
+.dish {
+  font-family:var(--font1) ;
+  color: var(--title-color); 
+  font-weight: 600;
+  font-size: 1rem;
+  width: 180px;
+  text-align: start;
+  margin-bottom: 10px;
+}
+
  .recipe__btn {
   display: inline-block;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 10px 10px;
   text-align: center;
-  vertical-align: center;
-  width: 130px;
-  height: 50px;
-  padding: 10px 0 ;
+  font-size: 1rem;
   background-color: rgb(201, 148, 148);
   color: #fff;
+  border: 1px solid #ad8978;
   font-weight: bold;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   border-radius: 8px;
+  max-width: 100%;
  }
 
  .recipe__btn:hover{
@@ -240,11 +226,12 @@ form ion-icon {
 
 .footer__nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer__link {
-  color: white;
+  color: var(--title-color);
   text-decoration: none;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -254,76 +241,39 @@ form ion-icon {
   text-decoration: underline;
 }
 
-
-
-/* 
- .footer{
-  background-color: var(--brown-coffee);
-  color: #71302f; 
-  margin: 0;
-  padding: 0;
-  height: auto;
- }
-
- .footer__container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  align-items: center;
-  margin-left: 1em;
- }
-
-  .footer__icon {
-  vertical-align: middle;
-  margin-right: .5em;
-  }
- 
-
-  .footer__link {
-    text-decoration: none;
-    color:#71302f ;
-  }
-
-  .footer__link:hover{
-    text-decoration: underline;
-  }
-
-  .footer__social {
-    display: flex;
-    width: max-content;
-    margin: 0 auto;
-    gap: 1.3em;
-  }
-
-  .footer__media {
-    border: 1px solid #71302f;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-  }
-
-  .footer__picture{
-    width: 100px;
-    margin-right: 2em;
-  }
-
-  .footer__logo {
-    width: 100%;
-    display: block;
-    border-radius: 50%;
-
-  }
-
-  .footer__nav {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1em;
-    text-align: center;
-  } */
-
 @media (max-width: 768px) {
 
+ .nav {
+  align-items: center ;
+  justify-content: space-between;
+}
 
+.nav__logo {
+  width: 110px;
+}
+
+.nav__img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.nav__link:first-of-type {
+  margin-left: auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--title-color);
+  font-size: 1.2rem;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+
+.footer__nav {
+  flex-wrap: wrap;
+}
 }
