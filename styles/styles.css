@@ -9,34 +9,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
-html {
+html, body {
   font-family: var(--font1);
   font-size: 16px;
+  height: 100%;
 }
 
-body{
-  background-color: var(--beige-coffee);
-  min-height: 100vh;
- 
-}
-
-.main {
-  margin: 0 auto;
-  height: auto;
-}
 
 .container{
   max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 20px 0 ;
 }
 
 .hero{
-  position: relative;
   background-color: var(--brown-coffee);
 }
 
@@ -52,7 +41,6 @@ body{
 
 .nav__logo {
   width: 110px;
-  
 }
 
 .nav__img {
@@ -83,17 +71,7 @@ body{
 
 .plenty__logo {
  max-height: 150px;
-;
-}
 
-.recipes__container {
-  width: 100%;
-  max-width: 1100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
 }
 
 .title, .subtitle {
@@ -113,35 +91,44 @@ body{
   margin-bottom: 10px;
 }
 
-form {
- width: 89%;
-  max-width: 375px;
-  margin: 20px auto;
+.main{
+  min-height: 100vh;    
+  background-color: var(--beige-coffee);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
 }
 
+.recipes__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+  /* max-width: 1100px; */
+  
+}
+
+
 .recipes__container form {
-  max-width: 370px;
+  width: 89%;
+  height: auto;
+  max-width: 375px;
   margin: 20px auto;
  }
 
  .recipes__container form input {
-  text-align: center;
-  padding: 20px;
-  font-size: 1.3em;
-  color: var(--title-color);
- }
-
-form input {
   width: 89%;
+  display: inline-block;
   background-color: transparent;
+  text-align: center;
   padding: 1em;
   border-radius: 36px;
   border: none;
   outline:none;
-  font-size: 1rem;
-  display: inline-block;
-}
-
+  font-size: 1.3em;
+  color: var(--title-color);
+ }
 
 form ion-icon {
   width: 10%;
@@ -212,10 +199,70 @@ form ion-icon {
   line-height: 1.5rem;
  }
 
+ .footer {
+  background-color: var(--brown-coffee);
+  color: white;
+  padding: 40px 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__picture {
+  width: 100px;
+  margin-right: 30px;
+}
+
+.footer__logo {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__media {
+  margin-right: 20px;
+}
+
+.footer__img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* 
  .footer{
   background-color: var(--brown-coffee);
   color: #71302f; 
-  min-height: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
  }
 
  .footer__container{
@@ -231,10 +278,6 @@ form ion-icon {
   margin-right: .5em;
   }
  
-  .footer__info{ 
-    font-size: 1.2rem;
-  }
-
 
   .footer__link {
     text-decoration: none;
@@ -261,11 +304,16 @@ form ion-icon {
     display: flex;
   }
 
-  .footer__logo {
+  .footer__picture{
     width: 100px;
-    height: 100px;
+    margin-right: 2em;
+  }
+
+  .footer__logo {
+    width: 100%;
+    display: block;
     border-radius: 50%;
-    padding: 0;
+
   }
 
   .footer__nav {
@@ -273,7 +321,8 @@ form ion-icon {
     flex-direction: column;
     margin-left: 1em;
     text-align: center;
-  }
+  } */
+
 @media (max-width: 768px) {
 
 
