@@ -9,13 +9,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html, body {
   font-family: var(--font1);
   font-size: 16px;
   height: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .container{
@@ -70,13 +71,13 @@ html, body {
 
 .plenty__logo {
  max-height: 150px;
-
 }
 
 .main{
   min-height: 100vh;    
   background-color: var(--beige-coffee);
   margin: 0 auto;
+
 }
 
 .recipes__container {
@@ -186,9 +187,12 @@ form ion-icon {
  }
 
  .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: var(--brown-coffee);
   color: white;
-  padding: 20px 0;
+  padding: 1rem;
 }
 
 .footer__container {
